@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #24053E;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/large-bg-circles.png), url(./img/small-bg-circles.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -2% 23%, 102% 75%;
+}

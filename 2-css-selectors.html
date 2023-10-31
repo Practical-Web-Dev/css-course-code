@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    /* Selecting via element selector */
+    h1 {
+      color: red;
+    }
+
+    /* Selecting via id selector */
+    #first-p {
+      color: green;
+    }
+
+    /* Selecting via class selector */
+    .my-p {
+      color: purple;
+    }
+
+
+    /* Selecting via element hierarchy */
+    .info-section h2 {
+      color: blue;
+    }
+
+    .info-section p {
+      color: blue;
+    }
+
+    button {
+      border: none;
+      background-color: yellow;
+      color: green;
+      padding: 10px 30px;
+      cursor: pointer;
+      transition: all .2s ease-in;
+    }
+
+
+    /* Selecting via psuedo selector */
+
+    button:hover {
+      background-color: purple;
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>All About CSS Selectors</h1>
+  <p id="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum repellendus nihil
+    tempore
+    suscipit aliquid
+    cupiditate, tenetur eligendi voluptate sed dolore culpa error, repellat, voluptates consequuntur voluptas?
+    Consectetur, libero delectus? Praesentium autem nesciunt libero nisi quasi eos iure eligendi ad quisquam? Magnam
+    harum esse facere vitae dolorem perferendis at nemo.</p>
+
+  <h2>Another heading</h2>
+  <p class="my-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laborum repellendus nihil tempore
+    suscipit aliquid
+    cupiditate, tenetur eligendi voluptate sed dolore culpa error, repellat, voluptates consequuntur voluptas?
+    Consectetur, libero delectus? Praesentium autem nesciunt libero nisi quasi eos iure eligendi ad quisquam? Magnam
+    harum esse facere vitae dolorem perferendis at nemo.</p>
+
+
+  <section class="info-section">
+
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum tenetur aspernatur nisi dolorem amet. Dolor
+      beatae dolorum officiis ab architecto et mollitia amet rem, aliquam tempore ipsum dolores in autem vitae! Libero,
+      labore explicabo enim eum nisi, velit commodi laudantium, fugit praesentium dolor quaerat magnam deleniti nobis
+      natus itaque sequi magni necessitatibus odio. Temporibus amet sit perferendis autem debitis, atque ex aspernatur,
+      quibusdam eius magnam voluptates. Odio optio doloremque ipsa sed eveniet, assumenda excepturi laboriosam ducimus
+      officia architecto ipsum nostrum quibusdam cupiditate dolorum, cumque quo quasi libero, voluptas minima nesciunt
+      tempore aperiam consectetur dicta itaque! Sunt ea facilis dolores illo.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum tenetur aspernatur nisi dolorem amet. Dolor
+      beatae dolorum officiis ab architecto et mollitia amet rem, aliquam tempore ipsum dolores in autem vitae! Libero,
+      labore explicabo enim eum nisi, velit commodi laudantium, fugit praesentium dolor quaerat magnam deleniti nobis
+      natus itaque sequi magni necessitatibus odio. Temporibus amet sit perferendis autem debitis, atque ex aspernatur,
+      quibusdam eius magnam voluptates. Odio optio doloremque ipsa sed eveniet, assumenda excepturi laboriosam ducimus
+      officia architecto ipsum nostrum quibusdam cupiditate dolorum, cumque quo quasi libero, voluptas minima nesciunt
+      tempore aperiam consectetur dicta itaque! Sunt ea facilis dolores illo.</p>
+
+    <button>Press Me</button>
+
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Floats</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 30px auto;
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    #box-2 {
+      float: left;
+      width: 65%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat at! Illum, corporis! Molestiae,
+        possimus voluptate? Totam ipsum, quos aliquam odit soluta possimus. Dicta, tempore, illo perspiciatis architecto
+        officiis iure libero in corrupti optio unde voluptatibus dolores labore mollitia, voluptas deleniti distinctio
+        illum commodi aut quam dolorem similique dolor. Esse.</p>
+    </div>
+    <div id="box-2" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat at! Illum, corporis! Molestiae,
+        possimus voluptate? Totam ipsum, quos aliquam odit soluta possimus. Dicta, tempore, illo perspiciatis architecto
+        officiis iure libero in corrupti optio unde voluptatibus dolores labore mollitia, voluptas deleniti distinctio
+        illum commodi aut quam dolorem similique dolor. Esse.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat at! Illum, corporis! Molestiae,
+        possimus voluptate? Totam ipsum, quos aliquam odit soluta possimus. Dicta, tempore, illo perspiciatis architecto
+        officiis iure libero in corrupti optio unde voluptatibus dolores labore mollitia, voluptas deleniti distinctio
+        illum commodi aut quam dolorem similique dolor. Esse.</p>
+    </div>
+    <div class="clear"></div>
+    <div id="box-4" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, placeat at! Illum, corporis! Molestiae,
+        possimus voluptate? Totam ipsum, quos aliquam odit soluta possimus. Dicta, tempore, illo perspiciatis architecto
+        officiis iure libero in corrupti optio unde voluptatibus dolores labore mollitia, voluptas deleniti distinctio
+        illum commodi aut quam dolorem similique dolor. Esse.</p>
+    </div>
+  </div>
+</body>
+
+</html>

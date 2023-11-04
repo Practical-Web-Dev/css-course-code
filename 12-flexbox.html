@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    li a {
+      margin: 1rem;
+    }
+
+    .flex-container {
+      max-width: 100%;
+      margin: 30px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+      background-color: blue;
+      gap: 1rem;
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+      /* flex-direction: row-reverse; */
+    }
+
+    .box {
+      background-color: #f4f4f4;
+      border: 1px solid black;
+      padding: 20px;
+      margin: 1rem 0rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Join Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="flex-container">
+    <div class="box">
+      <h2>Flexbox 1</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aperiam dicta dolores reprehenderit totam
+        rem, iure ex saepe voluptatibus. Odio, quo! Doloremque ducimus recusandae repellendus nobis itaque animi
+        voluptas nesciunt!</p>
+    </div>
+    <div class="box">
+      <h2>Flexbox 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aperiam dicta dolores reprehenderit totam
+        rem, iure ex saepe voluptatibus. Odio, quo! Doloremque ducimus recusandae repellendus nobis itaque animi
+        voluptas nesciunt!</p>
+    </div>
+    <div class="box">
+      <h2>Flexbox 3</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aperiam dicta dolores reprehenderit totam
+        rem, iure ex saepe voluptatibus. Odio, quo! Doloremque ducimus recusandae repellendus nobis itaque animi
+        voluptas nesciunt!</p>
+    </div>
+    <div class="box">
+      <h2>Flexbox 4</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aperiam dicta dolores reprehenderit totam
+        rem, iure ex saepe voluptatibus. Odio, quo! Doloremque ducimus recusandae repellendus nobis itaque animi
+        voluptas nesciunt!</p>
+    </div>
+  </div>
+</body>
+
+</html>

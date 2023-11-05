@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Media Queries</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .info-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .info {
+      margin: 3rem 0rem;
+      background-color: #f4f4f4;
+      padding: 1rem;
+      border: 1px solid black;
+    }
+
+    /* body {
+      background-color: blue;
+    } */
+
+    /* 
+    
+    Media Queries
+    
+    */
+
+    @media screen and (max-width: 768px) {
+      /* body {
+        background-color: orange;
+      } */
+    }
+
+    @media screen and (max-width: 480px) {
+      /* body {
+        background-color: lightgreen;
+      } */
+
+      .info-section {
+        flex-direction: column;
+        gap: 0;
+
+      }
+
+      .info {
+        margin: 1rem 0rem;
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border: 1px solid black;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <section class="info-section">
+      <div class="info">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi quia dolores eligendi, nemo et
+          quisquam in nobis, omnis explicabo voluptatem optio animi mollitia, id ad officia dicta iste minus.</p>
+      </div>
+      <div class="info">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi quia dolores eligendi, nemo et
+          quisquam in nobis, omnis explicabo voluptatem optio animi mollitia, id ad officia dicta iste minus.</p>
+      </div>
+      <div class="info">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores excepturi quia dolores eligendi, nemo et
+          quisquam in nobis, omnis explicabo voluptatem optio animi mollitia, id ad officia dicta iste minus.</p>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto
+    }
+
+    .grid-container {
+      display: grid;
+      /* grid-template-columns: 200px 200px 200px 500px 200px 200px; */
+      /* grid-template-columns: 200px auto 200px; */
+      /* grid-template-columns: auto auto auto; */
+      /* grid-template-columns: repeat(3, auto); */
+      grid-template-columns: 1fr 1fr 3fr;
+      margin-top: 5rem;
+    }
+
+    .grid-item {
+      padding: 3rem;
+      border: 1px solid #333;
+      background-color: #f4f4f4;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Mini Layout Styles */
+
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin: 10rem 0rem;
+      gap: 1rem;
+    }
+
+    section {
+      border: 1px solid #333;
+      background-color: #f4f4f4;
+      height: 400px;
+      padding: 1rem;
+    }
+
+    aside {
+      border: 1px solid #333;
+      background-color: #f4f4f4;
+      height: 400px;
+      padding: 1rem;
+    }
+
+    /* Grid Row Styles */
+
+    .grid-row-container {
+      display: grid;
+      grid-template-rows: 1fr 2fr 1fr;
+      margin: 10rem 0rem;
+    }
+
+    .grid-row-item {
+      padding: 3rem;
+      border: 1px solid #333;
+      background-color: #f4f4f4;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Grid row and column combined */
+
+    .combined-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 2fr 3fr;
+      margin: 10rem 0rem;
+    }
+
+    .combined-item {
+      padding: 3rem;
+      border: 1px solid #333;
+      background-color: #f4f4f4;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* Spanning Rows and Columns Styles */
+
+    .span-grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 10rem 0rem;
+      gap: 8px;
+    }
+
+    .span-item {
+      padding: 3rem;
+      border: 1px solid #333;
+      background-color: #f4f4f4;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .span-item:first-child {
+      /* grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 3; */
+
+      grid-column: 1 / span 3;
+      grid-row: 1 / span 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Grid Basics -->
+
+  <div class="container">
+
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <!-- <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div> -->
+    </div>
+  </div>
+
+  <!-- Mini Layout with Grid -->
+  <div class="container">
+    <main>
+      <section>
+        <h3>Welcome to the Website</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate voluptates nemo ut deleniti iste
+          pariatur tempore, hic eveniet dolores molestias minus voluptatum delectus, excepturi dolorum reprehenderit
+          magni minima quod expedita?</p>
+      </section>
+      <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam, doloremque vero fuga hic porro?
+        </p>
+      </aside>
+    </main>
+  </div>
+
+
+  <!-- Grid Template Rows -->
+  <div class="container">
+    <div class="grid-row-container">
+      <div class="grid-row-item">Item 1</div>
+      <div class="grid-row-item">Item 2</div>
+      <div class="grid-row-item">Item 3</div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Combine grid rows and columns to make 2d layout -->
+  <div class="container">
+    <div class="combined-grid-container">
+      <div class="combined-item">Item 1</div>
+      <div class="combined-item">Item 2</div>
+      <div class="combined-item">Item 3</div>
+      <div class="combined-item">Item 4</div>
+      <div class="combined-item">Item 5</div>
+      <div class="combined-item">Item 6</div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Spanning Rows and Columns with Grid -->
+  <div class="container">
+    <div class="span-grid-container">
+      <div class="span-item">Item 1</div>
+      <div class="span-item">Item 2</div>
+      <div class="span-item">Item 3</div>
+      <div class="span-item">Item 4</div>
+      <div class="span-item">Item 5</div>
+      <div class="span-item">Item 6</div>
+      <div class="span-item">Item 7</div>
+      <div class="span-item">Item 8</div>
+      <div class="span-item">Item 9</div>
+      <div class="span-item">Item 10</div>
+      <div class="span-item">Item 11</div>
+      <div class="span-item">Item 12</div>
+      <div class="span-item">Item 13</div>
+      <div class="span-item">Item 14</div>
+      <div class="span-item">Item 15</div>
+      <div class="span-item">Item 16</div>
+    </div>
+  </div>
+</body>
+
+</html>
